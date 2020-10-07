@@ -1,0 +1,36 @@
+{{define "content"}}
+    <div class="mudi-typo">
+        <h1>Question {{.thisQuestion.Id}}</h1>
+        <div class="mdui-progress">
+            <div class="mdui-progress-determinate" style="width: {{.progress.Percent}}%;"></div>
+        </div>
+        <div class="mdui-typo" id="question"></div>
+
+        <h3>Answer</h3>
+        <div class="mdui-typo" id="answer"></div>
+
+        {{if .marker.Id }}
+            <blockquote>
+                <p>{{.marker.Name}} have given {{.score.Score}} point(s)</p>
+            </blockquote>
+        {{end}}
+    </div>
+    <hr>
+    <form method="post">
+        <div class="mdui-textfield">
+            <label>Score</label>
+            <input name="score" value="{{if .score.Id}} {{.score.Score}} {{end}}" class="mdui-textfield-input" placeholder="Score"/>
+        </div>
+        <button class="mdui-btn mdui-btn-raised" type="submit">Submit</button>
+    </form>
+    <button class="mdui-btn mdui-btn-raised" onclick="location ='/answers/{{.thisQuestion.Id}}/{{.nextId}}'">Next Answer</button>
+    <button class="mdui-btn mdui-btn-raised" onclick="location ='/answers/{{.thisQuestion.Id}}'">Back</button>
+
+    <script>
+        let content = "{{.answer.Content}}";
+        document.getElementById('answer').innerHTML =
+            marked(content.replaceAll("\n","<br>"));
+        document.getElementById('question').innerHTML =
+            marked("{{.thisQuestion.Title}}");
+    </script>
+{{end}}

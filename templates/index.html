@@ -1,0 +1,42 @@
+
+{{ define "content" }}
+    {{if .thisQuestion.Id }}
+        <h1>Question {{.thisQuestion.Id}}</h1>
+        <div class="mdui-progress">
+            <div class="mdui-progress-determinate" style="width: {{.thisProgress.Percent}}%;"></div>
+        </div>
+        <div class="mdui-typo" id="question"></div>
+
+        <button onclick="location = '/answers/{{.thisQuestion.Id}}/0'" class="mdui-btn mdui-btn-raised">Review</button>
+        <button onclick="location = '/'" class="mdui-btn mdui-btn-raised">Back</button>
+        <h3>All Answers</h3>
+        <ul class="mdui-list">
+            {{range .allAnswers}}
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-text">{{.Content}}</div>
+                    </div>
+                </li>
+            {{end}}
+        </ul>
+    {{else}}
+        <h1>Overview</h1>
+        <ul class="mdui-list">
+            {{range $k, $v := .progress}}
+                <li class="mdui-list-item mdui-ripple" onclick="location='/answers/{{$k}}'">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title">Question{{ $k }} {{.Done}} / {{.Count}}
+                        </div>
+                            <div class="mdui-progress">
+                                <div class="mdui-progress-determinate" style="width: {{.Percent}}%;"></div>
+                            </div>
+                    </div>
+                </li>
+            {{end}}
+        </ul>
+    {{end}}
+    <script>
+        document.getElementById('question').innerHTML =
+            marked(" {{.thisQuestion.Title}} ");
+    </script>
+{{end}}

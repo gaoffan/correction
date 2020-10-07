@@ -1,0 +1,17 @@
+{{ define "content" }}
+    <div class="mdui-card mdui-m-a-4 mdui-p-a-4">
+        <div class="mdui-card-header-title">Sign In</div>
+        <div class="mdui-card-header-subtitle">{{.error}}</div>
+        <form method="post" action="/login">
+            <div class="mdui-textfield">
+                <i class="mdui-icon material-icons">email</i>
+                <input name="email" class="mdui-textfield-input" type="email" placeholder="Email"/>
+            </div>
+            <div class="mdui-textfield">
+                <i class="mdui-icon material-icons">lock</i>
+                <input name="password" class="mdui-textfield-input" type="password" placeholder="Password"/>
+            </div>
+            <button class="mdui-btn mdui-btn-raised" type="submit">Sign IN</button>
+        </form>
+    </div>
+{{end}}
