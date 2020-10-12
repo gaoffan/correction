@@ -28,10 +28,19 @@
         <div class="mdui-toolbar mdui-color-theme">
             <a class="mdui-typo-headline">评卷系统</a>
             <div class="mdui-toolbar-spacer"></div>
+            <div class="mdui-textfield">
+                <input id="detail-email" class="mdui-textfield-input" type="email" placeholder="输入邮箱查看回答情况"/>
+            </div>
+            <button onclick="checkDetail()" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">check</i></button>
         </div>
     </div>
     <div class="mdui-container">
         {{template "content" .}}
     </div>
 </body>
+<script>
+    function checkDetail(){
+        location = "/detail?email=" + document.getElementById("detail-email").value;
+    }
+</script>
 </html>

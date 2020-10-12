@@ -36,7 +36,9 @@
         </ul>
     {{end}}
     <script>
+        {{if .thisQuestion.Id}}
         document.getElementById('question').innerHTML =
             marked(" {{.thisQuestion.Title}} ");
+        {{end}}
     </script>
 {{end}}

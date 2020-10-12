@@ -19,15 +19,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948411c4-ae37-41a4-ac1f-3980d72cbafb" name="Default Changelist" comment="" />
+    <list default="true" id="948411c4-ae37-41a4-ac1f-3980d72cbafb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/answer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.14.5/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../correction-system" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -38,17 +52,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager" selected="Go Build.go build correction">
     <configuration name="go build correction" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="correction" />
-      <working_directory value="$PROJECT_DIR$/../correction-system" />
+      <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/../correction-system" />
@@ -89,6 +105,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -102,22 +119,46 @@
       <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state x="488" y="171" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.965@0.23.1680.965" timestamp="1602085965501" />
-    <state width="1299" height="317" key="GridCell.Tab.0.bottom" timestamp="1602086124774">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="1299" height="317" key="GridCell.Tab.0.bottom" timestamp="1602421374641">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1299" height="317" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1602086124774" />
-    <state width="1299" height="317" key="GridCell.Tab.0.center" timestamp="1602086124773">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="1299" height="317" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1602087154563" />
+    <state width="1299" height="317" key="GridCell.Tab.0.bottom/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374641" />
+    <state width="1299" height="317" key="GridCell.Tab.0.center" timestamp="1602421374639">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1299" height="317" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1602086124773" />
-    <state width="1299" height="317" key="GridCell.Tab.0.left" timestamp="1602086124773">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="1299" height="317" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1602087154562" />
+    <state width="1299" height="317" key="GridCell.Tab.0.center/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374639" />
+    <state width="1299" height="317" key="GridCell.Tab.0.left" timestamp="1602421374639">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1299" height="317" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1602086124773" />
-    <state width="1299" height="317" key="GridCell.Tab.0.right" timestamp="1602086124774">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state width="1299" height="317" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1602087154560" />
+    <state width="1299" height="317" key="GridCell.Tab.0.left/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374639" />
+    <state width="1299" height="317" key="GridCell.Tab.0.right" timestamp="1602421374640">
+      <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1299" height="317" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1602086124774" />
+    <state width="1299" height="317" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1602087154563" />
+    <state width="1299" height="317" key="GridCell.Tab.0.right/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374640" />
+    <state width="1299" height="317" key="GridCell.Tab.1.bottom" timestamp="1602421374642">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1299" height="317" key="GridCell.Tab.1.bottom/0.23.1680.965@0.23.1680.965" timestamp="1602087154566" />
+    <state width="1299" height="317" key="GridCell.Tab.1.bottom/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374642" />
+    <state width="1299" height="317" key="GridCell.Tab.1.center" timestamp="1602421374641">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1299" height="317" key="GridCell.Tab.1.center/0.23.1680.965@0.23.1680.965" timestamp="1602087154565" />
+    <state width="1299" height="317" key="GridCell.Tab.1.center/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374641" />
+    <state width="1299" height="317" key="GridCell.Tab.1.left" timestamp="1602421374641">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1299" height="317" key="GridCell.Tab.1.left/0.23.1680.965@0.23.1680.965" timestamp="1602087154564" />
+    <state width="1299" height="317" key="GridCell.Tab.1.left/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374641" />
+    <state width="1299" height="317" key="GridCell.Tab.1.right" timestamp="1602421374642">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1299" height="317" key="GridCell.Tab.1.right/0.23.1680.965@0.23.1680.965" timestamp="1602087154565" />
+    <state width="1299" height="317" key="GridCell.Tab.1.right/0.23.2560.1340@0.23.2560.1340" timestamp="1602421374642" />
     <state x="724" y="235" width="598" height="548" key="find.popup" timestamp="1602085844507">
       <screen x="0" y="23" width="1680" height="965" />
     </state>

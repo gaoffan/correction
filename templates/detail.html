@@ -1,0 +1,13 @@
+{{define "content"}}
+    <div class="mdui-typo">
+        <h2>{{.user.Name}} - {{.user.Email}}</h2>
+        {{range .answers}}
+            <h1>题目 {{.QuestionId}} 的回答</h1>
+            <div id="answer{{.QuestionId}}"></div>
+            <script>
+                document.getElementById('answer{{.QuestionId}}').innerHTML =
+                    marked("{{.Content}}".replace(/\n/g,"<br>"));
+            </script>
+        {{end}}
+    </div>
+{{end}}

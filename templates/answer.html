@@ -27,9 +27,8 @@
     <button class="mdui-btn mdui-btn-raised" onclick="location ='/answers/{{.thisQuestion.Id}}'">Back</button>
 
     <script>
-        let content = "{{.answer.Content}}";
         document.getElementById('answer').innerHTML =
-            marked(content.replaceAll("\n","<br>"));
+            marked("{{.answer.Content}}".replace(/\n/g,"<br>"));
         document.getElementById('question').innerHTML =
             marked("{{.thisQuestion.Title}}");
     </script>
